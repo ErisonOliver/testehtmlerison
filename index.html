@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pr-be">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinâmicas</title>
+</head>
+
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplismente  aumente e diminua
+        o tamanho do seu navegador
+
+        <!--A ordem do codigo tem que ser como mostrado abaixo-->
+        <picture>
+            <source media="(max-width: 350px)" srcset="imagens/imagem-p.png" type="image/png">
+            <source media="(max-width:750px )" srcset="imagens/imagem-p.png" type="image/png">
+            <source media="(max-width: 1050px)" srcset="imagens/imagem-m.png" type="image/png">
+            <img src="imagens/imagem-g.png" alt="Imagem flexivel">
+        </picture>
+    </p>
+
+    <h1>REPRODUZINDO AUDIO</h1>
+    <P>Musica do eminem no nosso site </P>
+
+   <!-- <audio src="midias/eminem.mp3" controls autoplay></audio> -->
+
+
+
+   <!--  <audio preload="">
+    auto => carrega o audio junto com o carregamento do site // o que pode deixa-lo mais pesado
+    metadata => mostra mais detalhes ao controle do audio e carrega só depois do play
+    none =>  não carrega nada até da play-->
+
+
+    <!--Parâmetros do preload alguns exemplos abaixo
+    
+        - autoplay = audio incia sozinho apos o carregamento do site
+        - controls = faz aparecer os controles
+        - loop = repete o audio assim que ele é finalizado
+    
+    
+    -->
+
+   <audio preload="metadata" autoplay controls loop>
+    <source src="midias/eminem.mp3" type="audio/mpeg">
+    <source src="midias/eminem.ogg" type="audio/ogg">
+    <source src="midias/eminem.wav" type="audio/wav">
+    <p>Seu navegador não consegue reproduzir audio. <a href="midias/eminem.mp3">Clique aqui para baixar o arquivo mp3</a></p>
+   </audio>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
