@@ -4,6 +4,11 @@
     border: 0;
 }
 
-.baitola{
+body{
+    background-color: brown;
+}
+
+.baitolas{
     display: inline-block;
+
 }
